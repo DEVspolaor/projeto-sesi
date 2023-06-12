@@ -1,0 +1,77 @@
+@-webkit-keyframes spinning {
+    0% {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    }
+    50% {
+    transform: rotate(325deg);
+    -webkit-transform: rotate(325deg);
+    }
+    100% {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    }
+} 
+   @-webkit-keyframes translating {
+     0% {
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+     }
+    50% {
+    transform: translateX(50%);
+    -webkit-transform: translateX(50%);
+    }
+    100% {
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    }
+} 
+    @-webkit-keyframes color-change {
+    0%, 20%, 40%, 60%, 100% {
+    background-color: #fff;
+    }
+    10%, 30%, 50%, 70%, 90% {
+     background-color: #f00;
+    }
+}
+* {
+
+    margin: O;
+    padding: O;
+
+}
+  body {
+     background-color: #d145c0;
+  }
+
+    #ByLeandromeda {
+      width: 715px;
+      height: 500px;
+      margin: 0 auto;
+     position: relative;
+    }    
+
+#ByLeandromeda #moving-container {
+     width: 10em;
+    height: 10em;
+    margin: 10px auto 70px;
+    position: relative;
+    -webkit-animation: translating 5s infinite;
+}
+
+#ByLeandromeda #pokeball-container {
+    width: 10em;
+    height: 10em;
+    margin: 10px auto 70px;
+    position: relative;
+    -webkit-animation: spinning 5s infinite;
+}
+
+ #ByLeandromoeda #pokeball {
+    width: 10em;
+    height: 10em;
+    background-color: #fff;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+ }
